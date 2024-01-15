@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
@@ -35,4 +36,6 @@ require __DIR__.'/auth.php';
 Route::get('/' , [ProductController::class,'index'])->name('index') ;
 
 Route::get('/product/create' , [ProductController::class,'create'])->name('product.create') ;
+
+Route::get('/admin' , [AdminController::class,'index'])->name('admin') ;
 

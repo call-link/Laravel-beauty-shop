@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,6 @@
 
     <!-- style link -->
     <link rel="stylesheet" href="{{ asset('css/admin/admin.css') }}">
-    <!-- <link rel="stylesheet" href="{{ asset('css/admin/modal/_add_product_style.css') }}"> -->
 
     <!-- fontawesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,9 +15,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
-
 <body>
-
+    
     <!-- sidebar section start -->
 
     <section id="sidebar">
@@ -29,84 +26,84 @@
         </a>
 
         <ul class="side-menu top">
-
+            
             <li>
                 <a href="#">
-                    <i class="bx bxs-dashboard"></i>
-                    <span class="text">dashboard</span>
+                <i class="bx bxs-dashboard"></i>
+                <span class="text">dashboard</span>
                 </a>
             </li>
 
             <li>
                 <a href="#">
-                    <i class="bx bx-info-square"></i>
-                    <span class="text">About us</span>
+                <i class="bx bx-info-square"></i>
+                <span class="text">About us</span>
                 </a>
             </li>
 
             <li>
                 <a href="#">
-                    <i class='bx bxs-user-rectangle'></i>
-                    <span class="text">Profile</span>
+                <i class='bx bxs-user-rectangle' ></i>
+                <span class="text">Profile</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="#">
+                <i class='bx bx-captions' ></i>
+                <span class="text">Title</span>
                 </a>
             </li>
 
             <li>
                 <a href="#">
-                    <i class='bx bx-captions'></i>
-                    <span class="text">Title</span>
+                <i class='bx bx-images'></i>
+                <span class="text">image</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="#">
+                <i class="bx bx-package"></i>
+                <span class="text">Products</span>
                 </a>
             </li>
 
             <li>
                 <a href="#">
-                    <i class='bx bx-images'></i>
-                    <span class="text">image</span>
+                <i class="bx bx-user-pin"></i>
+                <span class="text">Customers</span>
                 </a>
             </li>
 
             <li>
                 <a href="#">
-                    <i class="bx bx-package"></i>
-                    <span class="text">Products</span>
-                </a>
-            </li>
-
-            <li>
-                <a href="#">
-                    <i class="bx bx-user-pin"></i>
-                    <span class="text">Customers</span>
-                </a>
-            </li>
-
-            <li>
-                <a href="#">
-                    <i class='bx bxs-id-card'></i>
-                    <span class="text">Contact Us</span>
+                <i class='bx bxs-id-card'></i>
+                <span class="text">Contact Us</span>
                 </a>
             </li>
         </ul>
 
         <ul class="side-menu">
-
+            
             <li>
                 <a href="#">
-                    <i class="bx bxs-cog"></i>
-                    <span class="text">Settings</span>
+                <i class="bx bxs-cog"></i>
+                <span class="text">Settings</span>
                 </a>
             </li>
 
             <li>
                 <a href="#" class="logout">
-                    <i class="bx bx-log-out"></i>
-                    <span class="text">Log out</span>
+                <i class="bx bx-log-out"></i>
+                <span class="text">Log out</span>
                 </a>
             </li>
 
         </ul>
 
-    </section>
-
+    </section>    
+    
     <!-- sidebar section end -->
 
 
@@ -114,7 +111,7 @@
     <section id="content">
 
 
-        <!-- navbar section start -->
+    <!-- navbar section start -->
         <nav>
             <i class="bx bx-menu"></i>
             <a href="#" class="nav-link">Categories</a>
@@ -129,54 +126,56 @@
                 <span class="num">8</span>
             </a>
             <a href="#" class="profile">
-                <img src="{{ asset('img/pers_1.jpg') }}" alt="">
+                <img src="../Assets/img/pers_1.jpg" alt="">
             </a>
         </nav>
-        <!-- navbar section end -->
+    <!-- navbar section end -->
 
-        <!-- title section start -->
+    <!-- title section start -->
 
-        <section class="title">
-            <span class="text">ADD YOUR PRODUCT</span>
+    <section class="title">
+        <span class="text">ADD YOUR PRODUCT</span>
+    </section>
+    
+    <!-- title section end -->
+
+    <!-- uploader section start -->
+    <form action="#">
+        <section id="uploader" class="pro">
+            <div class="upload_area Products_custom">
+                <input type="file" name="" id="photo" class=" inp-photo">
+                <i class="bx bxs-cloud-upload"></i>
+                <h3>Upload Image Or Click here</h3>
+            </div>
+            <div class="form_inp">
+                <label for="title">Title :
+                    <input type="text" id="title"> 
+                </label>
+                <label for="price">Price :
+                    <input type="text" id="price"> 
+                </label>
+                <label for="offer">Offer :
+                    <input type="text" id="offer"> 
+                </label>
+            </div>
+            <div class="btns">
+            <button type="submit" value="Upload" class="up-btn">Upload</button>
+            <button type="submit" value="Send" class="send">Send</button>
+        </div>
         </section>
-
-        <!-- title section end -->
-
-        <!-- uploader section start -->
-        <form action="#">
-            <section id="uploader_pro" class="pro">
-                <div class="upload_area Products_custom">
-                    <input type="file" name="" id="photo" class=" inp-photo">
-                    <i class="bx bxs-cloud-upload"></i>
-                    <h3>Upload Image Or Click here</h3>
-                </div>
-                <div class="form_inp">
-                    <label for="title">Title :
-                        <input type="text" id="title">
-                    </label>
-                    <label for="price">Price :
-                        <input type="text" id="price">
-                    </label>
-                    <label for="offer">Offer :
-                        <input type="text" id="offer">
-                    </label>
-                </div>
-                <div class="btns">
-                    <button type="submit" value="Upload" class="up-btn">Upload</button>
-                    <button type="submit" value="Send" class="send">Send</button>
-                </div>
-            </section>
         </form>
         <!-- uploader section end -->
+    
 
-
-    </section>
+    </section>    
     <!-- content section end -->
 
+
+
+
     <!-- script link -->
-    <script src=" {{ asset('js/admin.js') }}"></script>
-
-
+    <script src="{{ asset('js/admin.js') }}"></script>
+    
+    
 </body>
-
 </html>

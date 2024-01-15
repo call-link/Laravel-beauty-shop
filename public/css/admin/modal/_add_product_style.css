@@ -1,6 +1,3 @@
-
-
-/* add product start */
 #uploader_pro{
     display: flex;
     align-items: center;
@@ -35,7 +32,7 @@
     text-align: center;
 }
 
-.form_inp .input{
+.form_inp input{
     margin-left: 10px;
     width: 50%;
     color: var(--text_color01);
@@ -44,11 +41,11 @@
     background: #404040;
 }
 
-.form_inp .input:focus{
+.form_inp input:focus{
     box-shadow: var(--shadow_03);
 }
 
-.form_inp .input:user-valid{
+.form_inp input:user-valid{
     box-shadow: var(--shadow_04);
 }
 

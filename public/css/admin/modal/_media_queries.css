@@ -1,5 +1,3 @@
-/* media queries start */
-
 @media (max-width: 768px) {
     #sidebar{
         width: 200px;
