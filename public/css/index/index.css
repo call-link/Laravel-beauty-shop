@@ -133,3 +133,15 @@ body{
 }
 
 /* index and scrollbar end */
+
+
+.icon-eye {
+    color: rgb(165, 165, 165);
+    font-size: 12px;
+}
+
+.p-eye{
+    color: rgb(165, 165, 165);
+    font-size: 13px;
+    font-weight: bold;
+}
