@@ -6,7 +6,7 @@
 <ul class="side-menu top">
 
     <li>
-        <a href="#">
+        <a href="/admin">
             <i class="bx bxs-dashboard"></i>
             <span class="text">dashboard</span>
         </a>
@@ -41,7 +41,7 @@
     </li>
 
     <li>
-        <a href="#">
+        <a href="/admin/products">
             <i class="bx bx-package"></i>
             <span class="text">Products</span>
         </a>

@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class vi.vi extends Component
+class admin.navSearch extends Component
 {
     /**
      * Create a new component instance.
@@ -21,6 +21,6 @@ class vi.vi extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.vi.vi');
+        return view('components.admin.nav-search');
     }
 }

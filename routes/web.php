@@ -35,7 +35,11 @@ require __DIR__.'/auth.php';
 
 Route::get('/' , [ProductController::class,'index'])->name('index') ;
 
-Route::get('/product/create' , [ProductController::class,'create'])->name('product.create') ;
 
 Route::get('/admin' , [AdminController::class,'index'])->name('admin') ;
 
+Route::get('/admin/products' , [AdminController::class,'products'])->name('admin.products') ;
+
+Route::get('/product/create' , [ProductController::class,'create'])->name('product.create') ;
+
+Route::post('/products' , [ProductController::class,'store'])->name('product.store') ;
