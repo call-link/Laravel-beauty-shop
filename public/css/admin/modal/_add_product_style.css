@@ -2,14 +2,100 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    background: var(--bac-light);
+    background: #979797d4;
     border-radius: 14px;
     margin: 20px auto;
-    padding: 20px 0;
+    width: 100%;
+    padding: 15px 25px;
     color: var(--dark);
     font-family: var(--poppins);
-    width: 450px;
+    border: 3px solid rgb(158 158 158) ;
+}
+
+
+#uploader_pro .upload_area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+    width: 100%;
+    border-radius: 10px;
+    /* background: var(--bac-gray); */
+    border: 3px solid #9e9e9e;
+    /* box-shadow: 0px 0px 10px 5px #2a9d90c5; */
+    margin: 7px 5px 35px 2px;
+    /* animation: shadow 5s ease-in-out infinite; */
+    position: relative;
+}
+
+@keyframes shadow {
+    0%{
+        box-shadow: 0px 0px 10px 5px #9d7b2ac5;
+    }
+    25%{
+        box-shadow: 0px 0px 8px 4px rgba(227, 188, 29, 0.849);
+    }
+    50%{
+        box-shadow: 0px 0px 6px 3px #9d952ac5;
+    }
+    75%{
+        box-shadow: 0px 0px 4px 2px #8c9d2ac5;
+    }
+    100%{
+        box-shadow: 0px 0px 8px 1.5px #9d752ac5;
+    }
+}
+
+#uploader_pro .upload_area #photo{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: transparent;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#uploader_pro .upload_area.active #photo{
+    opacity: 1;
+}
+
+#uploader_pro .upload_area img{
+    width: 98%;
+    height: 98%;
+    position: absolute;
+    border-radius: 7px;
+}
+
+#uploader_pro .upload_area i{
+    margin-bottom: 20px;
+    font-size: 70px;
+}
+
+#uploader_pro .upload_area h3{
+    font-size: 18px;   
+    font-weight: 400;
+}
+
+#uploader_pro .up-btn{
+    padding: 15px 20px;
+    border-radius: 7px;
+    font-size: 16px;
+    letter-spacing: .8px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    background: var(--background_color05);
+    color: var(--dark);
+    cursor: pointer;
+}
+
+#uploader_pro .up-btn:hover{
+    background: var(--blue-hover);
+}
+
+.pro{
+    display: flex!important;
+    align-items: center;
 }
 
 .pro .Products_custom{
@@ -18,27 +104,57 @@
 
 .form_inp{
     display: flex;
+    /* align-items: center; */
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    justify-content: space-around;
-    background: var(--bac-gray);
+    text-align: left;
+    /* background: var(--bac-gray); */
     margin-bottom: 30px;
     padding: 20px 15px;
-    width: 80%;
+    width: 100%;
     border-radius: 7px;
+}
+
+.form_inp .inp_sec{
+    width: 100%;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.form_inp .inp_sec input{
+    background: #cccccc;
+    color: #1e1e1e;
+    /* font-weight: bold; */
+    margin-bottom: 20px;
+    width: 70%;
+    padding: 7px 15px;
+}
+
+.form_inp .inp_sec input::placeholder{
+    color: #626262;
+    font-family: var(--poppins);
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .form_inp label{
     text-align: center;
 }
 
+.title_inp{
+    margin-right: 20px;
+    width: fit-content;
+}
+
 .form_inp input{
     margin-left: 10px;
-    width: 50%;
+    /* width: 72%; */
     color: var(--text_color01);
     border-radius: 5px;
     padding: 5px 10px;
-    background: #404040;
+    background: #e3e3e3;
 }
 
 .form_inp input:focus{
@@ -62,7 +178,7 @@
 }
 
 .pro .send{
-    background: var(--background_color12)!important;
+    background: #4eb325!important;
     margin-left: 20px;
     padding: 15px 20px;
     border-radius: 7px;
@@ -73,10 +189,15 @@
     background: var(--background_color05);
     color: var(--dark);
     cursor: pointer;
+    font-weight: bold;
 }
 
 .pro .send:hover{
     background: var(--background_color13)!important;
+}
+
+.up_area{
+    width: 100%;
 }
 
 /* add product end */

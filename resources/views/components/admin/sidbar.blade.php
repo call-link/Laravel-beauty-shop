@@ -72,7 +72,7 @@
     </li>
 
     <li>
-        <a href="#" class="logout">
+        <a href="#" class="logoutbtnred logout ">
             <i class="bx bx-log-out"></i>
             <span class="text">Log out</span>
         </a>

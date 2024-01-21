@@ -35,9 +35,9 @@
     --bac-border: .1rem solid #d3ad7f;
     --bac-light: #515151;
     --bac-blue_dark: #0c4986;
-    --bac-blue: #1486f8;
+    --bac-blue: #61a229;
     --light-blue: #cfe8ff;
-    --bac-gray: #353535;
+    --bac-gray: #858585;
     --dark-gray: #ffffff;
     --dark: #e0e0e0;
     --red: #db504a;
@@ -115,3 +115,12 @@ body{
 }
 
 
+.succssfully{
+    color: rgb(81 153 81);
+    font-size: 25px;
+    font-weight: bold;
+}
+.logoutbtnred{
+    background-color: rgb(233, 70, 25) !important;
+    color: white !important;
+}

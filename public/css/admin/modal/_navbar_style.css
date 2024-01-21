@@ -1,6 +1,6 @@
 #content nav{
     height: 56px;
-    background: var(--bac-light);
+    background: #434343;
     padding: 0 24px;
     display: flex;
     align-items: center;
@@ -20,7 +20,7 @@
     border-radius: 50%;
     bottom: -40px;
     left: 0;
-    box-shadow: -20px -20px 0 var(--bac-light);
+    box-shadow: -20px -20px 0 #434343;
 }
 
 #content nav a{

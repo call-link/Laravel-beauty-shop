@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Product;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Redirect;
 
 class ProductController extends Controller
 {
@@ -15,11 +15,11 @@ class ProductController extends Controller
     }
 
     public function create(){
-        // return view('products.create') ;
-        var_dump('create products') ;
+        return view('products.create') ;
     }
 
     public function store(Request $request){
-        var_dump($request->all()) ;
+        Product::create($request->all()) ;
+        return Redirect()->route('product.create')->with('alert' , 'Create Product Is Succsessfully .') ;
     }
 }
