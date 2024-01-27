@@ -28,6 +28,7 @@ class ProductController extends Controller
     }
     public function show(Request $request , int $id){
         $product = Product::find($id) ;
+        dd($product) ;
         return view('products.show' , compact('product')) ;
     }
 }
