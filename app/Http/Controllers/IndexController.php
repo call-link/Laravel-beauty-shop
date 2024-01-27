@@ -6,7 +6,8 @@ use Illuminate\Http\Request;
 
 class IndexController extends Controller
 {
-    public function index(){
-        return 'this is index controller' ;
+    public function index()
+    {
+        return 'this is index controller';
     }
 }

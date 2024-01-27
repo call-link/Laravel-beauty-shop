@@ -1,5 +1,5 @@
 <a href="#" class="brand">
-    <i class="bx bxs-smile"></i>
+    <i class="bx "></i>
     <span class="text">Admin panel</span>
 </a>
 

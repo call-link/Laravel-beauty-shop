@@ -16,6 +16,12 @@
         <span class="text succssfully">
             {{session('alert')}}
         </span>
+        @elseif($errors->any())
+            @foreach($errors->all() as $err)
+                <span class="text succssfully">
+                    {{ $err }}<br>
+                </span>
+            @endforeach
         @else
         <span class="text">
             ADD YOUR PRODUCT
@@ -32,22 +38,22 @@
         <section id="uploader_pro" class="pro" style="display: flex;">
             <div class="form_inp">
                 <div class="inp_sec">
-                <input placeholder="Name :" type="text" id="name" name="name">
+                <input placeholder="@lang('products.name')" type="text" id="name" name="name" value="{{old('name')}}">
                 </div>
                 <div class="inp_sec">
-                <input placeholder="Price :" type="text" id="price" name="price">
+                <input placeholder="@lang('products.price') " type="text" id="price" name="price" value="{{old('price')}}">
                 </div>
                 <div class="inp_sec">
-                <input placeholder="Offer :" type="text" id="offer" name="offer">
+                <input placeholder="@lang('products.offer') " type="text" id="offer" name="offer" value="{{old('offer')}}">
                 </div>
                 <div class="inp_sec">   
-                <input placeholder="Categories :" type="text" id="category_id" name="category_id">
+                <input placeholder="@lang('products.categories') " type="text" id="category_id" name="category_id" value="{{old('category_id')}}">
                 </div>
                 <div class="inp_sec">
-                <input placeholder="Count :" type="text" id="numbr_of_price" name="number_of_price">
+                <input placeholder="@lang('products.count') " type="text" id="numbr_of_price" name="number_of_price" value="{{old('number_of_price')}}">
                 </div>
                 <div class="inp_sec">
-                <input placeholder="Slug :" type="text" id="slug" name="slug">
+                <input placeholder="@lang('products.slug') " type="text" id="slug" name="slug" value="{{old('slug')}}">
                 </div>
             </div> 
             <div class="up_area">

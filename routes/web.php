@@ -43,3 +43,6 @@ Route::get('/admin/products' , [AdminController::class,'products'])->name('admin
 Route::get('/product/create' , [ProductController::class,'create'])->name('product.create') ;
 
 Route::post('/products' , [ProductController::class,'store'])->name('product.store') ;
+
+Route::get('/products/{id}' , [ProductController::class,'show'])->name('product.show') ;
+

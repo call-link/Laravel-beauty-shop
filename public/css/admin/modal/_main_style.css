@@ -37,7 +37,7 @@
 }
 
 #content main .head-title .left .breadcrumb li a.active{
-    color: var(--bac-blue);
+    color: #c3c3c3;
     pointer-events: unset
 }
 
