@@ -22,11 +22,14 @@
     <!-- header section start -->
 
     <header class="header gradient-border">
-
+        @auth
         <a href="#" class="logo">
             <img src="{{ asset('img/logo_6.jpg') }}" alt="">
         </a>
-
+        @endauth
+        @guest
+        <a href="#" class="logo" style="color: wheat;font-size:13px;font-weight:bold">Login / Register</a>
+        @endguest
         <nav class="navbar">
             <a href="#home">Home</a>
             <a href="#about">About</a>
