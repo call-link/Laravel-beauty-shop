@@ -14,8 +14,14 @@
     <section class="title">
         @if(session('alert'))
         <span class="text succssfully">
-            {{session('alert')}}
+            <p>{{session('alert')}}</p>
         </span>
+        @elseif($errors->any())
+            @foreach($errors->all() as $err)
+            <span class="text succssfully">
+                <p>{{ $err }}</p><br>
+            </span>
+            @endforeach
         @endif
     </section>
 
