@@ -26,9 +26,11 @@
         <a href="#" class="logo">
             <img src="{{ asset('img/logo_6.jpg') }}" alt="">
         </a>
+        <a href="{{ route('logout') }}" class="logout" style="top:8px;left: -228px; position: relative; color: #fb2424; font-size: 14px; font-weight: bold;">Logout</a>
+        <p style="top: -10px; left: -380px; position: relative; color: #bdbdbd; font-size: 14px; font-weight: bold;">{{ auth()->user()->name }}</p>
         @endauth
         @guest
-        <a href="#" class="logo" style="color: wheat;font-size:13px;font-weight:bold">Login / Register</a>
+        <a href="{{ route('register.create') }}" class="logo" style="color: wheat;font-size:13px;font-weight:bold">Login / Register</a>
         @endguest
         <nav class="navbar">
             <a href="#home">Home</a>

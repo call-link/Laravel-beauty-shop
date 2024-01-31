@@ -27,7 +27,7 @@
             <input type="submit" class="btn" value="Register"><br>
             <a href="">Forget Password</a>
             <div class="register-list">
-                <p>Do you have account ?</p><a href="">Login</a>
+                <p>Do you have account ?</p><a href="{{route('login.store')}}">Login</a>
             </div>
 
         </form>
