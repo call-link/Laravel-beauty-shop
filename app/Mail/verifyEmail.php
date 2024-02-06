@@ -24,7 +24,9 @@ class verifyEmail extends Mailable
     }
 
     public function build(){
-        return $this->view('email.verify-email');
+        return $this->markdown('email.verify-email')->with([
+            'url' => 'http://127.0.0.1:8000/'
+        ]);
     }
 
     /**
