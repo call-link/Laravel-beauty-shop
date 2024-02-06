@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreProductRequest;
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 
 class ProductController extends Controller
@@ -23,12 +24,16 @@ class ProductController extends Controller
 
     public function store(StoreProductRequest $request)
     {
-        Product::create($request->all());
+        // dd(Auth::user()) ;
+        // Product::create($request->all());
+        $request->user()->products()->create($request->all()) ;
         return Redirect()->route('product.create')->with('alert', 'Create Product Is Succsessfully .');
     }
-    public function show(Request $request , int $id){
-        $product = Product::find($id) ;
-        dd($product) ;
-        return view('products.show' , compact('product')) ;
+
+    public function show(Request $request, int $id)
+    {
+        $product = Product::find($id);
+       
+        return view('products.show', compact('product'));
     }
 }

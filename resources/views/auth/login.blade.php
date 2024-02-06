@@ -5,14 +5,14 @@
             @csrf
             <h1>Login</h1>
             <div class="input-box">
-                <input type="email" name="email" placeholder="Your email" required>
+                <input type="text" name="email" placeholder="Your email" required>
             </div>
             <div class="input-box">
                 <input type="password" name="password" placeholder="Your Password" id="" required>
             </div>
             <div class="remember-folget">
                 <label for="">
-                    <input type="checkbox">Remember Me.
+                    <input type="checkbox" name="remember">Remember Me.
                 </label>
                 <br>
             </div>
