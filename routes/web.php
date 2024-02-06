@@ -4,6 +4,9 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
+use App\Mail\verifyEmail;
+use App\Models\User;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -44,3 +47,10 @@ Route::get('/home', function () {
 // });
 
 require __DIR__ . '/auth.php';
+
+// mail
+
+Route::get('/email' , function(){
+    $user = User::first() ;
+    Mail::to('hadi.mohammadi1379@gmail.com')->send(new verifyEmail($user)) ;
+});
